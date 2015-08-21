@@ -19,50 +19,887 @@
 
 
     <style>
-        .affix {
-            top: 0;
-            width: 100%;
+
+        body {
+            position: relative;
+            color: #FFFFFF;
+            background-color: #233C5A;
         }
 
-        .affix + .container-fluid {
-            padding-top: 70px;
+
+        .section {
+            padding-top: 50px;
+            padding-bottom: 0px;
         }
+
+        .last-section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #header {
+            background-color: #040404;
+        }
+            color: #FFFFFF;
+
+        #about {
+            color: #FFFFFF;
+            background-color: #233C5A;
+        }
+
+        #tutoring {
+            color: #D3B2AF;
+            background-color: #4C0D09;
+        }
+
+        #members {
+            color: #CC4037;
+            background-color: #FFC19F;
+        }
+
+        #events {
+            color: #FFFFFF;
+            background-color: #000000;
+        }
+
+        #links {
+            color: #000000;
+            background-color: #FFFFFF;
+        }
+
+        #contactUs {
+            color: #FFFFFF;
+            background-color: #233C5A;
+        }
+
+        .carousel-inner > .item > img {
+            margin: 0 auto;
+        }
+
+        .carouselItem img {
+          width: auto;
+          height: 323px;
+          max-height: 323px;
+        }
+
     </style>
 
 
     <title>Sigma Gamma Tau Honor Society - University of Colorado at Boulder Chapter</title>
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">&#931;&#915;&#932; CU</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                About <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#aboutSociety">Society</a></li>
+                                <li><a href="#aboutMembership">Membership</a></li>
+                                <li><a href="#aboutActivities">Activities</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#tutoring">Tutoring</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Members <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#membersOfficers">Officers</a></li>
+                                <li><a href="#membersFacultyAdvisor">Faculty Advisor</a></li>
+                                <li><a href="#membersAssociationAlumni">Association Alumni</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Events <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#eventsEdaysFall2013">Fall 2013 E-Days Rocket Launch</a></li>
+                                <li><a href="#eventsEdaysSpring2013">Spring 2013 E-Days Rocket Launch</a></li>
+                                <li><a href="#eventsXPrize">Trip to X Prize</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#links">Links</a></li>
+                        <li><a href="#contactUs">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
 
 
     <!-- Header -->
-    <div class="container-fluid" style="background-color:#040404;">
+    <div id="header" class="container-fluid">
         <img src="images/header.jpg" class="img-responsive img-rounded" alt="Header" width="857" height="189">
     </div>
 
 
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="189">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">About</a></li>
-            <li><a href="#">Tutoring</a></li>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Links</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
+    <div id="about" class="section container-fluid" id="about">
+        <h1>About</h1>
+        <p>Welcome to the Sigma Gamma Tau main page.</p>
 
+        <div id="aboutSociety" class="section">
+            <h2>The Society</h2>
+            <p>We are the honor society chapter for Aerospace Engineering at
+            the University of Colorado at Boulder. Sigma Gamma Tau is a
+            national society that seeks to identify and recognize achievement
+            and excellence in the Aerospace field. There are 50 collegiate
+            chapters with more than 20,000 members. Every year, students,
+            alumni, and professionals that meet the standards of the society
+            are nominated for membership.</p>
+        </div>
 
-    <!-- Body of page. -->
-    <div class="container">
+        <div id="aboutMembership" class="section">
+            <h2>Membership</h2>
+            <div class="row">
+                <div class="col-sm-8">
+                    <p>Every student in Aerospace Engineering at the University who
+                    meets the class rankings below, has at least a B (85%) grade point
+                    average, and has completed at least 3 semesters of college credit
+                    will receive an invitation to attend an informational meeting.
+                    Further information will be given there on how to obtain society
+                    membership.</p>
+                </div>
+                <div class="col-sm-4">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Sophomore</td>
+                                <td>top 1/5 of class</td>
+                            </tr>
+                            <tr>
+                                <td>Junior</td>
+                                <td>top 1/4 of class</td>
+                            </tr>
+                            <tr>
+                                <td>Senior</td>
+                                <td>top 1/3 of class</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-        <p>This is some text.</p>
+        <div id="aboutActivities" class="last-section">
+            <h2>Activities</h2>
+            <p>As an honor society, Sigma Gamma Tau is primarily a service
+            organization. We provide free tutoring in all aerospace classes
+            during the semester (see Tutoring tab), as well as host several
+            educational activities throughout the year.</p>
+        </div>
 
     </div>
 
 
+    <div class="last-section container-fluid" id="tutoring">
+        <h1>Tutoring</h1>
+        <p>SGT is trying a new tutoring method this semester. If you would
+        like to be tutored, simply send us an 
+        <a href="mailto:SGTtutor@gmail.com">email</a> with 3 times you are
+        available and what topic you need help with. We will look through our
+        tutor list and attempt to match someone with you. </p>
+
+        <p>Please give at least 48 hour notice. Tutoring will occur in the
+        Engineering Center Lobby. The service is available <strong>8 AM to 5
+        PM</strong>, Monday through Friday.</p>
+
+        <h2>Courses We Cover</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <!-- APPM -->
+                <div class="panel-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#tutoringAPPM">APPM - Applied Math</a>
+                            </h3>
+                        </div>
+                        <div id="tutoringAPPM" class="panel-collapse collapse" style="color:#000000;">
+                            <ul class="list-group">
+                                <li class="list-group-item">APPM 1350 - Calculus 1</li>
+                                <li class="list-group-item">APPM 1360 - Calculus 2</li>
+                                <li class="list-group-item">APPM 2350 - Calculus 3</li>
+                                <li class="list-group-item">APPM 2360 - Differential Equations</li>
+                                <li class="list-group-item">APPM 3310 - Matrix Methods</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ASEN -->
+                <div class="panel-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#tutoringASEN">ASEN - Aerospace Engineering</a>
+                            </h3>
+                        </div>
+                        <div id="tutoringASEN" class="panel-collapse collapse" style="color:#000000;">
+                            <ul class="list-group">
+                                <li class="list-group-item">ASEN 2001 - Statics, Structures and Materials</li>
+                                <li class="list-group-item">ASEN 2002 - Intro to Aerodynamics and Thermodynamics</li>
+                                <li class="list-group-item">ASEN 2003 - Dynamics and Systems</li>
+                                <li class="list-group-item">ASEN 2004 - Vehicle Design and Performance</li>
+                                <li class="list-group-item">ASEN 3111 - Aerodynamics</li>
+                                <li class="list-group-item">ASEN 3112 - Structures</li>
+                                <li class="list-group-item">ASEN 3113 - Thermodynamics and Heat Transfer</li>
+                                <li class="list-group-item">ASEN 3128 - Aircraft Dynamics</li>
+                                <li class="list-group-item">ASEN 3200 - Orbital Mechanics, Attitude Dynamics and Control</li>
+                                <li class="list-group-item">ASEN 3300 - Aerospace Electronics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHEN -->
+                <div class="panel-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#tutoringCHEN">CHEN - Chemical Engineering</a>
+                            </h3>
+                        </div>
+                        <div id="tutoringCHEN" class="panel-collapse collapse" style="color:#000000;">
+                            <ul class="list-group">
+                                <li class="list-group-item">CHEN 1211 - Chemistry 1 for Engineers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm-6">
+
+                <!-- ECEN -->
+                <div class="panel-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#tutoringECEN">ECEN - Electrical & Computer Engineering</a>
+                            </h3>
+                        </div>
+                        <div id="tutoringECEN" class="panel-collapse collapse" style="color:#000000;">
+                            <ul class="list-group">
+                                <li class="list-group-item">ECEN 2120 - Computers as Components</li>
+                                <li class="list-group-item">ECEN 2250 - Circuits and Electronics 1</li>
+                                <li class="list-group-item">ECEN 2260 - Circuits and Electronics 2</li>
+                                <li class="list-group-item">ECEN 3100 - Digital Logic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GEEN -->
+                <div class="panel-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#tutoringGEEN">GEEN - General Engineering</a>
+                            </h3>
+                        </div>
+                        <div id="tutoringGEEN" class="panel-collapse collapse" style="color:#000000;">
+                            <ul class="list-group">
+                                <li class="list-group-item">GEEN 1300 - Intro to Engineering Computing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHYS -->
+                <div class="panel-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#tutoringPHYS">PHYS - Physics</a>
+                            </h3>
+                        </div>
+                        <div id="tutoringPHYS" class="panel-collapse collapse" style="color:#000000;">
+                            <ul class="list-group">
+                                <li class="list-group-item">PHYS 1110 - General Physics 1 (Calculus-based)</li>
+                                <li class="list-group-item">PHYS 1120 - General Physics 2 (Calculus-based)</li>
+                                <li class="list-group-item">PHYS 2010 - General Physics 1 (Algebra-based)</li>
+                                <li class="list-group-item">PHYS 2020 - General Physics 2 (Algebra-based)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section container-fluid" id="members">
+        <h1>Members</h1>
+
+        <div id="membersOfficers" class="section">
+            <h2>Officers</h2>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td>President</td>
+                            <td>Anthony Lima</td>
+                        </tr>
+                        <tr>
+                            <td>Vice President</td>
+                            <td>Dan Nowicki</td>
+                        </tr>
+                        <tr>
+                            <td>E-Days Coordinators</td>
+                            <td>Maggie Williams, Huikang Ma</td>
+                        </tr>
+                        <tr>
+                            <td>Outreach Coordinator</td>
+                            <td>Gabe Frank</td>
+                        </tr>
+                        <tr>
+                            <td>X-Plane Display Coordinator</td>
+                            <td>Andrew Marshall</td>
+                        </tr>
+                        <tr>
+                            <td>Tutoring Coordinator</td>
+                            <td>Ansel Rothstein-Dowden</td>
+                        </tr>
+                        <tr>
+                            <td>Webmaster</td>
+                            <td>Michael R. Shannon</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+
+        <div id="membersFacultyAdvisor" class="section">
+            <h2>Faculty Advisor</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-responsive img-rounded" src="http://www.colorado.edu/aerospace/sites/default/files/styles/small/public/people/Donna%20Gerren.jpg" alt="Dr. Donna S. Gerren" width="240" height="369"></img>
+                </div>
+                <div class="col-sm-8">
+                    <h3><a href="http://www.colorado.edu/aerospace/donna-gerren">Dr. Donna S. Gerren</a></h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="membersAssociationAlumni" class="last-section">
+            <h2>Association Alumni</h2>
+            <p><em>If you are not on the list but should be, please e-mail the webmaster.</em></p>
+            <div style="height:400px;overflow:auto;">
+                <table class="table table-striped">
+                    <thead>
+                        <tr><th>Name</th><th>Graduation Year</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Richard Rieber</td><td>2007</td></tr>
+                        <tr><td>Arseny Dolgov</td><td>2007</td></tr>
+                        <tr><td>Kathryn E. Rash</td><td>2007</td></tr>
+                        <tr><td>John B. Shelton</td><td>2007</td></tr>
+                        <tr><td>Laura Fisher</td><td>2004</td></tr>
+                        <tr><td>Michael Hooter</td><td>2004</td></tr>
+                        <tr><td>Christopher Kelley</td><td>2004</td></tr>
+                        <tr><td>David McNeill</td><td>2004</td></tr>
+                        <tr><td>Dave Miller</td><td>2004</td></tr>
+                        <tr><td>Jonathan Whitney</td><td>2004</td></tr>
+                        <tr><td>John R. Angell</td><td>2002</td></tr>
+                        <tr><td>Kristin M. Auslander</td><td>2002</td></tr>
+                        <tr><td>Daniel J. Bellinghausen</td><td>2002</td></tr>
+                        <tr><td>Dean K. Blom</td><td>2002</td></tr>
+                        <tr><td>Jacob R. Boettcher</td><td>2002</td></tr>
+                        <tr><td>Adam T. Dean</td><td>2002</td></tr>
+                        <tr><td>Tereas M Ellis</td><td>2002</td></tr>
+                        <tr><td>Zewdu Getachew</td><td>2002</td></tr>
+                        <tr><td>Kendra B. Kilbride</td><td>2002</td></tr>
+                        <tr><td>Chris J. Madsen</td><td>2002</td></tr>
+                        <tr><td>Kevin I. McWilliams</td><td>2002</td></tr>
+                        <tr><td>Scott T. Miller</td><td>2002</td></tr>
+                        <tr><td>Ashley Moore</td><td>2002</td></tr>
+                        <tr><td>John D. Neice</td><td>2002</td></tr>
+                        <tr><td>Jake D. Nelson</td><td>2002</td></tr>
+                        <tr><td>Jenny Novick</td><td>2002</td></tr>
+                        <tr><td>Erin Reed</td><td>2002</td></tr>
+                        <tr><td>Alejandro D. Reiman-Moreno</td><td>2002</td></tr>
+                        <tr><td>Lori L. Reynolds</td><td>2002</td></tr>
+                        <tr><td>Meridee E. Silbaugh</td><td>2002</td></tr>
+                        <tr><td>Patrick F. Smith</td><td>2002</td></tr>
+                        <tr><td>Brian D. Stewart</td><td>2002</td></tr>
+                        <tr><td>Brian W. Woods</td><td>2002</td></tr>
+                        <tr><td>Jason Ícott Arnold</td><td>1998</td></tr>
+                        <tr><td>Gregory Scott Benn</td><td>1998</td></tr>
+                        <tr><td>Cory R. Dixon</td><td>1998</td></tr>
+                        <tr><td>Erica Nicole Lieb</td><td>1998</td></tr>
+                        <tr><td>Lucia Ann Martinez</td><td>1998</td></tr>
+                        <tr><td>Benjamin Pierman Mottinger</td><td>1998</td></tr>
+                        <tr><td>Jason S. Muckenthaler</td><td>1998</td></tr>
+                        <tr><td>Sandra Beth Pitzak</td><td>1998</td></tr>
+                        <tr><td>Joshua Ryan Wells</td><td>1998</td></tr>
+                        <tr><td>Daniel Joseph Wicklund</td><td>1998</td></tr>
+                        <tr><td>Brian Shane Alexander</td><td>1997</td></tr>
+                        <tr><td>Sarah Marie Brennan</td><td>1997</td></tr>
+                        <tr><td>Rebecca Ann Clifford</td><td>1997</td></tr>
+                        <tr><td>Fuminori Doi</td><td>1997</td></tr>
+                        <tr><td>patrick Allen Holmes</td><td>1997</td></tr>
+                        <tr><td>Tatsushi Nakao</td><td>1997</td></tr>
+                        <tr><td>Eric Adam Nussbaumer</td><td>1997</td></tr>
+                        <tr><td>Jennifer Marie Owens</td><td>1997</td></tr>
+                        <tr><td>Tyler Warren Rogers</td><td>1997</td></tr>
+                        <tr><td>Timothy J. Rood</td><td>1997</td></tr>
+                        <tr><td>jason Haynes Woodward</td><td>1997</td></tr>
+                        <tr><td>Andrew James Carmain</td><td>1996</td></tr>
+                        <tr><td>Jason Edwin Hartmann</td><td>1996</td></tr>
+                        <tr><td>Micah Devin Lambeth</td><td>1996</td></tr>
+                        <tr><td>Tadd K. Leggate</td><td>1996</td></tr>
+                        <tr><td>Aaron J. Loewenson</td><td>1996</td></tr>
+                        <tr><td>Kenneth Joshua Stroud</td><td>1996</td></tr>
+                        <tr><td>Richard Alan Wise</td><td>1996</td></tr>
+                        <tr><td>Marcio sousa Carvalho</td><td>1995</td></tr>
+                        <tr><td>Georgiana Marie Halterman</td><td>1995</td></tr>
+                        <tr><td>Nicole M. King</td><td>1995</td></tr>
+                        <tr><td>Ioannis Pavlou</td><td>1995</td></tr>
+                        <tr><td>David Junskil Son</td><td>1995</td></tr>
+                        <tr><td>Bryce L. Cox</td><td>1994</td></tr>
+                        <tr><td>Keith B. Hutchinson</td><td>1994</td></tr>
+                        <tr><td>Todd W. Wantuch</td><td>1994</td></tr>
+                        <tr><td>Khalid Al-Ali</td><td>1993</td></tr>
+                        <tr><td>Jason E. Baugher</td><td>1993</td></tr>
+                        <tr><td>Steven M. Beckey</td><td>1993</td></tr>
+                        <tr><td>Karrin N. Borchard</td><td>1993</td></tr>
+                        <tr><td>Mark E. Bury</td><td>1993</td></tr>
+                        <tr><td>John Peter Buser</td><td>1993</td></tr>
+                        <tr><td>F. N. Dawood</td><td>1993</td></tr>
+                        <tr><td>Sean Dougherty</td><td>1993</td></tr>
+                        <tr><td>Robert T Ewes</td><td>1993</td></tr>
+                        <tr><td>David Hanna</td><td>1993</td></tr>
+                        <tr><td>James Lyons</td><td>1993</td></tr>
+                        <tr><td>Todd W. Oberhelman</td><td>1993</td></tr>
+                        <tr><td>Tory L. Patnoe</td><td>1993</td></tr>
+                        <tr><td>Adam C. Pederson</td><td>1993</td></tr>
+                        <tr><td>Steven D. Philipsen</td><td>1993</td></tr>
+                        <tr><td>Brett E. Pisor</td><td>1993</td></tr>
+                        <tr><td>John D. Platt</td><td>1993</td></tr>
+                        <tr><td>Justin C. Smith</td><td>1993</td></tr>
+                        <tr><td>Ernest L. Spence</td><td>1993</td></tr>
+                        <tr><td>Sandra E. Stephenson</td><td>1993</td></tr>
+                        <tr><td>Gregory R. Wilson</td><td>1993</td></tr>
+                        <tr><td>Jason A. Wynn</td><td>1993</td></tr>
+                        <tr><td>Jason W. Gloor</td><td>1992</td></tr>
+                        <tr><td>Troy U. Tateyama</td><td>1992</td></tr>
+                        <tr><td>Kirsten Abrahamson</td><td>1991</td></tr>
+                        <tr><td>Mark Charles Bennett</td><td>1991</td></tr>
+                        <tr><td>Jeffrey Russell Bobick</td><td>1991</td></tr>
+                        <tr><td>Gregory Wayne Brown</td><td>1991</td></tr>
+                        <tr><td>Jason Keith Buhler</td><td>1991</td></tr>
+                        <tr><td>Christopher William Ecks</td><td>1991</td></tr>
+                        <tr><td>Thomas Randall Evenson</td><td>1991</td></tr>
+                        <tr><td>Mehrdad Fahangnia</td><td>1991</td></tr>
+                        <tr><td>David Michael Goodner</td><td>1991</td></tr>
+                        <tr><td>Jeremy Keith Hachney</td><td>1991</td></tr>
+                        <tr><td>Jason David Hinkle</td><td>1991</td></tr>
+                        <tr><td>Melissa A. Kacena</td><td>1991</td></tr>
+                        <tr><td>Katalin M. Keener</td><td>1991</td></tr>
+                        <tr><td>Kindra Anne Larson</td><td>1991</td></tr>
+                        <tr><td>Donald Lee Penka,Jr. </td><td>1991</td></tr>
+                        <tr><td>Kevin Frederick Schrantz</td><td>1991</td></tr>
+                        <tr><td>Robert Kipp Shearman</td><td>1991</td></tr>
+                        <tr><td>Thomas Dent Sterrett</td><td>1991</td></tr>
+                        <tr><td>Brian D. Boyle</td><td>1990</td></tr>
+                        <tr><td>Karl T. Edquist</td><td>1990</td></tr>
+                        <tr><td>Mark O. Leikam</td><td>1990</td></tr>
+                        <tr><td>Kadett Chan</td><td>1989</td></tr>
+                        <tr><td>David J. DeMoulin</td><td>1989</td></tr>
+                        <tr><td>Mark B. Hinga</td><td>1989</td></tr>
+                        <tr><td>Michael L. Jensen</td><td>1989</td></tr>
+                        <tr><td>Matthew A. Lindsey</td><td>1989</td></tr>
+                        <tr><td>Brian W. Lucht</td><td>1989</td></tr>
+                        <tr><td>Kristina D. Mickus</td><td>1989</td></tr>
+                        <tr><td>Philip J. Moos</td><td>1989</td></tr>
+                        <tr><td>Kenneth E. Murphy</td><td>1989</td></tr>
+                        <tr><td>Kendall M. Nii</td><td>1989</td></tr>
+                        <tr><td>Russell E. Partch</td><td>1989</td></tr>
+                        <tr><td>Fabrizio M. Pela</td><td>1989</td></tr>
+                        <tr><td>Jason E. Priebe</td><td>1989</td></tr>
+                        <tr><td>Robert W. Reither</td><td>1989</td></tr>
+                        <tr><td>Eileen M. Saiki</td><td>1989</td></tr>
+                        <tr><td>Bruce A. Schulz</td><td>1989</td></tr>
+                        <tr><td>David J. Sprague</td><td>1989</td></tr>
+                        <tr><td>Rick A. Stewart</td><td>1989</td></tr>
+                        <tr><td>Timothy M. Straube</td><td>1989</td></tr>
+                        <tr><td>Robert M. Taylor</td><td>1989</td></tr>
+                        <tr><td>Nancy L. Wiltberger</td><td>1989</td></tr>
+                        <tr><td>Michael P. </td><td>1989</td></tr>
+                        <tr><td>Bruce C. Bockius</td><td>1988</td></tr>
+                        <tr><td>Chad A. Fox</td><td>1988</td></tr>
+                        <tr><td>Scott A. Green</td><td>1988</td></tr>
+                        <tr><td>Kenneth A. Hosch</td><td>1988</td></tr>
+                        <tr><td>Morgan C. Jones</td><td>1988</td></tr>
+                        <tr><td>Nathan C?W Marcantell</td><td>1988</td></tr>
+                        <tr><td>Chris S. Prehn</td><td>1988</td></tr>
+                        <tr><td>Bill James Skaff</td><td>1988</td></tr>
+                        <tr><td>Alfred B. Stout</td><td>1988</td></tr>
+                        <tr><td>Keith E. Wilkins</td><td>1988</td></tr>
+                        <tr><td>CHarles E. Wilson</td><td>1988</td></tr>
+                        <tr><td>Vicki Mimi Au?Yeung</td><td>1987</td></tr>
+                        <tr><td>Paul Byron Benfield</td><td>1987</td></tr>
+                        <tr><td>Daniel James Bennett</td><td>1987</td></tr>
+                        <tr><td>Mark Alan Clark</td><td>1987</td></tr>
+                        <tr><td>Richard S. Cooper</td><td>1987</td></tr>
+                        <tr><td>Christopher W. Dalquist</td><td>1987</td></tr>
+                        <tr><td>Charles David Fitzgerald</td><td>1987</td></tr>
+                        <tr><td>Joy M. Folkvord</td><td>1987</td></tr>
+                        <tr><td>Kytyn Annette Graff</td><td>1987</td></tr>
+                        <tr><td>Ture M. Hoefner</td><td>1987</td></tr>
+                        <tr><td>Michael Burt Horner</td><td>1987</td></tr>
+                        <tr><td>Michael Travis Martin</td><td>1987</td></tr>
+                        <tr><td>Jeffrey Michael Peterson</td><td>1987</td></tr>
+                        <tr><td>James Michael Rickard</td><td>1987</td></tr>
+                        <tr><td>Diana Rogers</td><td>1987</td></tr>
+                        <tr><td>Peter L. Rupp</td><td>1987</td></tr>
+                        <tr><td>Suzanne Grier Sawyer</td><td>1987</td></tr>
+                        <tr><td>Terri Sue Thomas</td><td>1987</td></tr>
+                        <tr><td>Gregory S. Weaver</td><td>1987</td></tr>
+                        <tr><td>Gary Alan Wick</td><td>1987</td></tr>
+                        <tr><td>Wesley Keith Berg</td><td>1986</td></tr>
+                        <tr><td>Terrence Dean Biever</td><td>1986</td></tr>
+                        <tr><td>Christine Bohn</td><td>1986</td></tr>
+                        <tr><td>Tony James Cetuk</td><td>1986</td></tr>
+                        <tr><td>Craig David Chapman</td><td>1986</td></tr>
+                        <tr><td>Scott J. Deffke</td><td>1986</td></tr>
+                        <tr><td>Wil Edward Faller</td><td>1986</td></tr>
+                        <tr><td>Ellis C. Gayles</td><td>1986</td></tr>
+                        <tr><td>Eric Marsall Hildebrand</td><td>1986</td></tr>
+                        <tr><td>Pieter Henry Kallemeyn,Jr. </td><td>1986</td></tr>
+                        <tr><td>Heidi Marie Leech</td><td>1986</td></tr>
+                        <tr><td>Carl L. Loeffel</td><td>1986</td></tr>
+                        <tr><td>Todd Evan Magee</td><td>1986</td></tr>
+                        <tr><td>J. Andrew Marshall</td><td>1986</td></tr>
+                        <tr><td>David Dennison Mell</td><td>1986</td></tr>
+                        <tr><td>Dana Lee Potter</td><td>1986</td></tr>
+                        <tr><td>Scott Andrew Reed</td><td>1986</td></tr>
+                        <tr><td>Shane Michael Swartz</td><td>1986</td></tr>
+                        <tr><td>Dana Lynn Trenary</td><td>1986</td></tr>
+                        <tr><td>Laura Lynn Watry</td><td>1986</td></tr>
+                        <tr><td>Rohan B. Zaveri</td><td>1986</td></tr>
+                        <tr><td>Ryan A. Border</td><td>1985</td></tr>
+                        <tr><td>D. Jay Brooks</td><td>1985</td></tr>
+                        <tr><td>Courtney A. Buck</td><td>1985</td></tr>
+                        <tr><td>Michael R. Dickey</td><td>1985</td></tr>
+                        <tr><td>Joseph N. DuLong</td><td>1985</td></tr>
+                        <tr><td>Jeffrey Alan Ferguson</td><td>1985</td></tr>
+                        <tr><td>H. Allan Foster</td><td>1985</td></tr>
+                        <tr><td>Keith Yoshio Hora</td><td>1985</td></tr>
+                        <tr><td>Gregg Arthur Jacobs</td><td>1985</td></tr>
+                        <tr><td>Wayne Edward Kimsey</td><td>1985</td></tr>
+                        <tr><td>James Clinton Knox</td><td>1985</td></tr>
+                        <tr><td>Molly Kristin McElroy</td><td>1985</td></tr>
+                        <tr><td>Paul Carroll Power</td><td>1985</td></tr>
+                        <tr><td>Jeffrey David Seltzer</td><td>1985</td></tr>
+                        <tr><td>Elizabeth Ann Swickard</td><td>1985</td></tr>
+                        <tr><td>Gary Neil Tajchman</td><td>1985</td></tr>
+                        <tr><td>Robert Z. Williamson</td><td>1985</td></tr>
+                        <tr><td>James W. Young,III </td><td>1985</td></tr>
+                        <tr><td>Darrell Frank Zimbelman</td><td>1985</td></tr>
+                        <tr><td>Marvin Clark Brownell,Jr. </td><td>1984</td></tr>
+                        <tr><td>Lisa Marie Cannon</td><td>1984</td></tr>
+                        <tr><td>Bruce Joseph Haines</td><td>1984</td></tr>
+                        <tr><td>David Kevin Luhman</td><td>1984</td></tr>
+                        <tr><td>Ronald Alois Madler</td><td>1984</td></tr>
+                        <tr><td>Bradley Dale Mulder</td><td>1984</td></tr>
+                        <tr><td>Rodney Matthew Ondle</td><td>1984</td></tr>
+                        <tr><td>William Allan Oppermann</td><td>1984</td></tr>
+                        <tr><td>William Kent Tobiska</td><td>1984</td></tr>
+                        <tr><td>Mark Allen Waltrip</td><td>1984</td></tr>
+                        <tr><td>Scott Paul Zimmerman</td><td>1984</td></tr>
+                        <tr><td>Jonathan Norman Adler</td><td>1983</td></tr>
+                        <tr><td>Behzad Alizadeh-Rad</td><td>1983</td></tr>
+                        <tr><td>Douglas Michael Atler</td><td>1983</td></tr>
+                        <tr><td>Michael Kelly Baldwin</td><td>1983</td></tr>
+                        <tr><td>Roxana Behbehani</td><td>1983</td></tr>
+                        <tr><td>Josephine P. Bimbler</td><td>1983</td></tr>
+                        <tr><td>Todd Guy Bult</td><td>1983</td></tr>
+                        <tr><td>Anthony P. Craig</td><td>1983</td></tr>
+                        <tr><td>James Alan Hare</td><td>1983</td></tr>
+                        <tr><td>Reed Richard Heimbecher</td><td>1983</td></tr>
+                        <tr><td>Randy Dwayne Jones</td><td>1983</td></tr>
+                        <tr><td>Thomas Leo Keavery,III</td><td>1983</td></tr>
+                        <tr><td>Steven E. Matousek</td><td>1983</td></tr>
+                        <tr><td>Roger Phillip McNamara</td><td>1983</td></tr>
+                        <tr><td>David Wayne Murrow</td><td>1983</td></tr>
+                        <tr><td>Mark Douglas Palmer</td><td>1983</td></tr>
+                        <tr><td>Bruce Howard Pepsin</td><td>1983</td></tr>
+                        <tr><td>Bradley Robert Poffenberger</td><td>1983</td></tr>
+                        <tr><td>Bryan M. Scurry</td><td>1983</td></tr>
+                        <tr><td>Dennis Dee Sutcliffe</td><td>1983</td></tr>
+                        <tr><td>Corinne M. Tosaki</td><td>1983</td></tr>
+                        <tr><td>John Robert Troeltzsch</td><td>1983</td></tr>
+                        <tr><td>Mark Christopher Watson</td><td>1983</td></tr>
+                        <tr><td>Cornelia White</td><td>1983</td></tr>
+                        <tr><td>Kevin B. Allen</td><td>1982</td></tr>
+                        <tr><td>Alfred J. Bedard,Jr. </td><td>1982</td></tr>
+                        <tr><td>Michael D. Brown</td><td>1982</td></tr>
+                        <tr><td>Philippe? Brun?</td><td>1982</td></tr>
+                        <tr><td>Mark H. Kliss</td><td>1982</td></tr>
+                        <tr><td>Larry D. Kos</td><td>1982</td></tr>
+                        <tr><td>Richard L. Luxford</td><td>1982</td></tr>
+                        <tr><td>Todd W. Marshall</td><td>1982</td></tr>
+                        <tr><td>Karen McCracken</td><td>1982</td></tr>
+                        <tr><td>Gregory J. McDermott</td><td>1982</td></tr>
+                        <tr><td>Philippe Saint-Aubert</td><td>1979</td></tr>
+                        <tr><td>Rodney Donald Bain</td><td>1978</td></tr>
+                        <tr><td>Fawzi Pascal Bayan</td><td>1978</td></tr>
+                        <tr><td>Keith Lorin Jenkins</td><td>1978</td></tr>
+                        <tr><td>Randy L. Naze</td><td>1978</td></tr>
+                        <tr><td>R. Stephen Price</td><td>1978</td></tr>
+                        <tr><td>Sam Thinh Quang</td><td>1978</td></tr>
+                        <tr><td>David M. Reynolds</td><td>1978</td></tr>
+                        <tr><td>Jeff Samuels</td><td>1978</td></tr>
+                        <tr><td>Susan F. Schroder</td><td>1978</td></tr>
+                        <tr><td>Anthony L. Thurnton</td><td>1978</td></tr>
+                        <tr><td>John Charles Wojick</td><td>1978</td></tr>
+                        <tr><td>Ronald A. Worley</td><td>1978</td></tr>
+                        <tr><td>Leslie Jean Allen</td><td>1977</td></tr>
+                        <tr><td>Rodd Cusic</td><td>1977</td></tr>
+                        <tr><td>Michael E. From</td><td>1977</td></tr>
+                        <tr><td>Paul M. Stremel</td><td>1977</td></tr>
+                        <tr><td>Firooz Asdollah Allahdadi</td><td>1976</td></tr>
+                        <tr><td>Dean Earl Davis</td><td>1976</td></tr>
+                        <tr><td>Timothy James Doll</td><td>1976</td></tr>
+                        <tr><td>Mark E. Fechtel</td><td>1976</td></tr>
+                        <tr><td>Richard A. Gerren</td><td>1976</td></tr>
+                        <tr><td>Gary Russell Holte</td><td>1976</td></tr>
+                        <tr><td>William Kaelin</td><td>1976</td></tr>
+                        <tr><td>William O'Neal</td><td>1976</td></tr>
+                        <tr><td>David Allan Pomeroy</td><td>1976</td></tr>
+                        <tr><td>John Powers Retelle,Jr. </td><td>1976</td></tr>
+                        <tr><td>David Rosing</td><td>1976</td></tr>
+                        <tr><td>Richard Andrew Sternal</td><td>1976</td></tr>
+                        <tr><td>Henry Alan Williams</td><td>1976</td></tr>
+                        <tr><td>Darrell Lee York</td><td>1976</td></tr>
+                        <tr><td>Steven Howard Adler</td><td>1975</td></tr>
+                        <tr><td>Daryl Lee Bahls</td><td>1975</td></tr>
+                        <tr><td>Donald A. Bastin</td><td>1975</td></tr>
+                        <tr><td>James Henry Belt</td><td>1975</td></tr>
+                        <tr><td>Ernest K. Beran</td><td>1975</td></tr>
+                        <tr><td>Larry Joseph Ciancio</td><td>1975</td></tr>
+                        <tr><td>William James Edwards</td><td>1975</td></tr>
+                        <tr><td>Bernard H. Fullenkamp</td><td>1975</td></tr>
+                        <tr><td>Douglas E. Hutchinson</td><td>1975</td></tr>
+                        <tr><td>Darrell Neal Jones</td><td>1975</td></tr>
+                        <tr><td>Richard Lee Kendel</td><td>1975</td></tr>
+                        <tr><td>James Matthew Morgan</td><td>1975</td></tr>
+                        <tr><td>Hernando Munevar</td><td>1975</td></tr>
+                        <tr><td>Jim S. O'Brien</td><td>1975</td></tr>
+                        <tr><td>Nina Ann Polok</td><td>1975</td></tr>
+                        <tr><td>Bruce Harrison Rowan</td><td>1975</td></tr>
+                        <tr><td>Helmut K. Sochn</td><td>1975</td></tr>
+                        <tr><td>Wayne Gary Stelts</td><td>1975</td></tr>
+                        <tr><td>Randall C. Stewart</td><td>1975</td></tr>
+                        <tr><td>Wayne T. Morrissey</td><td>1974</td></tr>
+                        <tr><td>Cary F. Veith</td><td>1974</td></tr>
+                        <tr><td>Randall Miles Clark</td><td>1971</td></tr>
+                        <tr><td>Ron Blackwelder</td><td>1964</td></tr>
+                        <tr><td>Virendra K. Dogra</td><td>-</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid section" id="events">
+        <h1>Events</h1>
+
+        <div id="eventsEdaysFall2013" class="section">
+            <h2>Fall 2013 E-Days Rocket Launch</h2>
+            <h3>October 2013</h3>
+            <p>CU Sigma Gamma Tau hosted the rocket launch competition as a
+            part of Engineering Days, or E-Days. SGT would like to thank
+            Boeing for sponsoring the event!</p>
+
+            <p>It was well attended and some excellent model rockets were
+            brought into the competition. Coverage of the event can be found
+            here:
+            <a href="http://www.colorado.edu/news/multimedia/cu-engineering-days-rocket-launch">
+                http://www.colorado.edu/news/multimedia/cu-engineering-days-rocket-launch
+            <a></p>
+
+            <div id="edaysFall2013Carousel" class="carousel slide" data-ride="carousel">
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active carouselItem"><img src="images/edays_fall2013/image01.jpg" alt="image01"></div>
+                    <div class="item carouselItem"><img src="images/edays_fall2013/image02.jpg" alt="image02"></div>
+                    <div class="item carouselItem"><img src="images/edays_fall2013/image03.jpg" alt="image03"></div>
+                    <div class="item carouselItem"><img src="images/edays_fall2013/image04.jpg" alt="image04"></div>
+                    <div class="item carouselItem"><img src="images/edays_fall2013/image05.jpg" alt="image05"></div>
+                    <div class="item carouselItem"><img src="images/edays_fall2013/image06.jpg" alt="image06"></div>
+                    <div class="item carouselItem"><img src="images/edays_fall2013/image07.jpg" alt="image07"></div>
+                    <div class="item carouselItem"><img src="images/edays_fall2013/image08.jpg" alt="image08"></div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#edaysFall2013Carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#edaysFall2013Carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <br/>
+                    <p>Check out this video of Fall 2013 Edays, made by Sara Rhoades.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/_w7lfsdSsIQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <br/>
+                    <p>And the coverage of the event by CU news.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/USewDWTB4l4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="eventsEdaysSpring2013" class="section">
+            <h2>Spring 2013 E-Days Rocket Launch</h2>
+            <h3>April 2013</h3>
+            <p>CU Sigma Gamma Tau hosted the rocket launch competition as a
+            part of Engineering Days, or E-Days. SGT would like to thank
+            Boeing for sponsoring the event! It was well attended and some
+            excellent model rockets were brought into the competition.</p>
+
+            <div id="edaysSpring2013Carousel" class="carousel slide" data-ride="carousel">
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active carouselItem"><img src="images/edays_spring2013/image01.jpg" alt="image01"></div>
+                    <div class="item carouselItem"><img src="images/edays_spring2013/image02.jpg" alt="image02"></div>
+                    <div class="item carouselItem"><img src="images/edays_spring2013/image03.jpg" alt="image03"></div>
+                    <div class="item carouselItem"><img src="images/edays_spring2013/image04.jpg" alt="image04"></div>
+                    <div class="item carouselItem"><img src="images/edays_spring2013/image05.jpg" alt="image05"></div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#edaysSpring2013Carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#edaysSpring2013Carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div id="eventsXPrize" class="last-section">
+            <h2>Trip to X Prize</h2>
+            <p>A group of SGT students were able to go on road trip down to
+            Arizona for X Prize competition. While there, they were able to
+            help out behind the scenes. </p>
+
+            <div id="xPrizeCarousel" class="carousel slide" data-ride="carousel">
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active carouselItem"><img src="images/xprize/image01.jpg" alt="image01"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image02.jpg" alt="image02"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image03.jpg" alt="image03"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image04.jpg" alt="image04"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image05.jpg" alt="image05"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image06.jpg" alt="image06"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image07.jpg" alt="image07"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image08.jpg" alt="image08"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image09.jpg" alt="image09"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image10.jpg" alt="image10"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image11.jpg" alt="image11"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image12.jpg" alt="image12"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image13.jpg" alt="image13"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image14.jpg" alt="image14"></div>
+                    <div class="item carouselItem"><img src="images/xprize/image15.jpg" alt="image15"></div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#xPrizeCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#xPrizeCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid last-section" id="links">
+        <h1>Links</h1>
+
+        <h3><a href="http://www.engr.wichita.edu/ae/sgt/main.html">National Sigma Gamma Tau Office</a></h3>
+        <p>For information about national officers, other chapters, and to buy
+        items from the gift store.</p>
+
+        <h3><a href="http://www.colorado.edu/aerospace/index.html">Aerospace Engineering Sciences</a></h3>
+        <p>Visit the website of the Department of Aerospace Engineering
+        Sciences at the University of Colorado for information about the
+        program, the professors, and the classes.</p>
+
+        <h3><a href="http://spaceflightnow.com/">Spaceflight Now</a></h3>
+        <p>This cool website is filled with videos and articles about things
+        that are going on in the space industry.</p>
+
+        <h3><a href="http://www.colorado.edu/">University of Colorado at Boulder</a></h3>
+        <p>In case you stumbled upon our website, and would like to get more
+        information about the University in general.</p>
+
+        <h3>Disclaimer</h3>
+        <p><em><strong>Links on these pages to non-university sites do not
+        represent endorsement by the University of Colorado at Boulder
+        or its affiliates.</strong></em></p>
+    </div>
+
+
+    <div class="container-fluid last-section" id="contactUs">
+        <h1>Contact Us</h1>
+        <a href="mailto:sgt@colorado.edu">sgtmail@colorado.edu</a>
+        <span style="padding:40px;"></span>
+    </div>
+
+    <p>Updated: 2015-08-21</p>
 
 
 </body>
