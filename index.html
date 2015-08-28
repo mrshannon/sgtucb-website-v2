@@ -22,7 +22,7 @@
 
         body {
             position: relative;
-            color: #FFFFFF;
+            color: #D3D8DE;
             background-color: #233C5A;
         }
 
@@ -38,12 +38,12 @@
 
         #header {
             padding-top: 50px;
-            color: #FFFFFF;
+            color: #D3D8DE;
             background-color: #040404;
         }
 
         #about {
-            color: #FFFFFF;
+            color: #D3D8DE;
             background-color: #233C5A;
         }
 
@@ -70,6 +70,11 @@
         #contactUs {
             color: #FFFFFF;
             background-color: #233C5A;
+        }
+
+        .modal-dialog {
+            color: #000000;
+            min-width: 70%;
         }
 
         .carousel-inner > .item > img {
@@ -105,6 +110,11 @@
             <div>
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="nav navbar-nav">
+                        <li>
+                            <a class="btn" data-toggle="modal" data-target="#calendarModal">
+                                <span class="glyphicon glyphicon-calendar"></span> Calendar</a>
+                            </a>
+                        </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 About <span class="caret"></span>
@@ -145,6 +155,34 @@
     </nav>
 
 
+    <!-- Calendar Modal -->
+    <div class="modal model-lg fade" id="calendarModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.google.com/calendar/embed?src=colorado.edu_p98b8hnrgpbvdktmoilgqqda8o%40group.calendar.google.com&ctz=America/Denver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" name="' + Date.now() + '"></iframe>
+                    </div>
+                </div>
+
+                <div class="modal-footer" style="text-align: left;">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="btn-group">
+                                <a href="https://www.google.com/calendar/feeds/colorado.edu_p98b8hnrgpbvdktmoilgqqda8o%40group.calendar.google.com/public/basic" class="btn btn-primary" role="button">XML</a>
+                                <a href="https://www.google.com/calendar/ical/colorado.edu_p98b8hnrgpbvdktmoilgqqda8o%40group.calendar.google.com/public/basic.ics" class="btn btn-success" role="button">ICAL</a>
+                                <a href="https://www.google.com/calendar/embed?src=colorado.edu_p98b8hnrgpbvdktmoilgqqda8o%40group.calendar.google.com&ctz=America/Denver" class="btn btn-warning" role="button">HTML</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3" style="text-align: right">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Header -->
     <div id="header" class="container-fluid">
@@ -152,7 +190,8 @@
     </div>
 
 
-    <div id="about" class="section container-fluid" id="about">
+    <!-- About -->
+    <div id="about" class="section container-fluid">
         <h1>About</h1>
         <p>Welcome to the Sigma Gamma Tau main page.</p>
 
@@ -210,7 +249,7 @@
     </div>
 
 
-    <div class="last-section container-fluid" id="tutoring">
+    <div id="tutoring" class="last-section container-fluid">
         <h1>Tutoring</h1>
         <p>SGT is trying a new tutoring method this semester. If you would
         like to be tutored, simply send us an 
@@ -775,14 +814,14 @@
                     <br/>
                     <p>Check out this video of Fall 2013 Edays, made by Sara Rhoades.</p>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/_w7lfsdSsIQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/_w7lfsdSsIQ" frameborder="0" allowfullscreen name="' + Date.now() + '"></iframe>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <br/>
                     <p>And the coverage of the event by CU news.</p>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/USewDWTB4l4" frameborder="0" allowfullscreen></iframe>
+                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/USewDWTB4l4" frameborder="0" allowfullscreen name="' + Date.now() + '"></iframe>
                     </div>
                 </div>
             </div>
